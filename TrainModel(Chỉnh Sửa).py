@@ -93,7 +93,7 @@ from sklearn.tree import DecisionTreeRegressor as dtg
 dt_models = dtg(random_state = 1)
 dt_models.fit(X_train,y_train)
 y_predict = dt_models.predict(X_test)
-Frame = pd.DataFrame({'y' : y_test(), 'y_pre' : y_predict})
+Frame = pd.DataFrame({'y' : y_test, 'y_pre' : y_predict})
 print(Frame)
 
 
